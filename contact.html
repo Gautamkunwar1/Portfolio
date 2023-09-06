@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Contact</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: 5px 15px;
+        font-size: 18px;
+      }
+      h1 {
+        text-align: center;
+        color: rgb(124, 0, 87);
+        text-shadow: 15px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        text-decoration: underline;
+        font-style: oblique;
+      }
+      .contact {
+        background-image: linear-gradient(
+          to right,
+          rgba(197, 224, 76, 0.678),
+          rgba(169, 238, 234, 0.76)
+        );
+        padding: 5px 20px 20px 20px;
+        border: 5px solid rgba(187, 202, 54, 0.644);
+        border-radius: 14px;
+        color: rgb(94, 26, 71);
+      }
+      input[type="text"],
+      input[type="e-mail"],
+      input[type="number"],
+      textarea {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+      }
+      input[type="submit"] {
+        width: 100%;
+        height: 30px;
+        border-radius: 15px;
+        border: none;
+        font-size: 25px;
+        color: rgb(98, 98, 189);
+      }
+      input[type="submit"]:hover {
+        background-color: #aedada;
+      }
+      a {
+        text-decoration: none;
+        font-weight: bold;
+      }
+      .return {
+        background-color: rgba(169, 238, 234, 0.76);
+        border-radius: 15px;
+        height: 30px;
+        width: 140px;
+        color: white;
+        text-align: center;
+        border: none;
+        margin-top: 25px;
+        margin-left: 1050px;
+        font-size: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="contact">
+      <form action="">
+        <h1>Contact Me</h1>
+        <hr />
+        <p>
+          Name :<input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your full name"
+            required
+          />
+        </p>
+        <p>
+          Email :<input
+            type="email"
+            name="e-mail"
+            id="mail"
+            placeholder="abc@gmail.com"
+            required
+          />
+        </p>
+        <p>
+          Phone Number :<input
+            type="number"
+            name="number"
+            id="number"
+            placeholder="Enter your mobile number"
+            required
+          />
+        </p>
+        <p>
+          Message :<textarea
+            name="message"
+            id="message"
+            cols="50"
+            rows="10"
+            placeholder="Enter message"
+          ></textarea>
+        </p>
+        <input type="submit" value="Submit" /><a href="index.html"></a>
+      </form>
+      <button class="return"><a href="index.html">Return to Home</a></button>
+    </div>
+  </body>
+</html>

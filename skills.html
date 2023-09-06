@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>My Skills</title>
+    <style>
+      body {
+        background: whitesmoke;
+      }
+      .skills {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        grid-gap: 1px;
+        grid-auto-rows: minmax(100px, auto);
+      }
+      #c {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        padding-left: 300px;
+        padding-top: 40px;
+      }
+      #java {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        padding-left: 400px;
+        padding-top: 40px;
+      }
+      #web {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        padding-left: 450px;
+        padding-top: 170px;
+      }
+      h2 {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-style: oblique;
+        font-weight: 900;
+        font-size: 2000;
+        color: rgb(0, 128, 53);
+        text-align: center;
+        padding-top: px;
+      }
+      .return {
+        background-color: whitesmoke;
+        border-radius: 15px;
+        height: 30px;
+        width: 140px;
+        color: rgb(20, 18, 18);
+        text-align: center;
+        border: none;
+
+        margin-left: 1050px;
+        font-size: 15px;
+      }
+      a {
+        text-decoration: none;
+        color: rgb(51, 40, 37);
+      }
+    </style>
+  </head>
+  <body>
+    <h2>My Skills</h2>
+    <hr />
+    <div class="skills">
+      <div id="c">
+        <img src="clogo.png" height="200px" alt=""/>
+      </div>
+      <div id="java">
+        <img src="java_logo2.jpg" height="220px" width="250px" alt="" />
+      </div>
+      <div id="web">
+        <img src="html_logo.png" height="250px" alt="" />
+      </div>
+    </div>
+    <div class="btn">
+      <button class="return"><a href="index.html">Return to Home</a></button>
+    </div>
+  </body>
+</html>
